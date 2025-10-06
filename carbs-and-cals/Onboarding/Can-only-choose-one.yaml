@@ -1,0 +1,15 @@
+appId: ${appId}
+tags:
+  - smoke
+---
+- launchApp:
+    clearState: true
+- assertVisible: Welcome to Carbs & Cals
+- tapOn: Select Type 1 Diabetes
+- tapOn: Select Type 2 Diabetes
+- assertVisible:
+    text: Select Type 1 Diabetes
+    checked: false
+- assertVisible:
+    text: Select Type 2 Diabetes
+    checked: true
