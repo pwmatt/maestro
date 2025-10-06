@@ -1,0 +1,10 @@
+appId: ${appId}
+tags:
+  - util
+---
+- waitForAnimationToEnd
+- runFlow:
+    when:
+      visible: Failed to load plans
+    commands:
+      - tapOn: Dismiss

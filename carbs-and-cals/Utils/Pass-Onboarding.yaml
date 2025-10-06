@@ -1,0 +1,14 @@
+appId: ${appId}
+tags:
+  - util
+---
+- assertVisible: Welcome to Carbs & Cals
+- tapOn: Select Type 1 Diabetes
+- assertVisible:
+    text: Select Type 1 Diabetes
+    checked: true
+- assertVisible:
+    text: Continue
+    enabled: true
+- tapOn: Continue
+- runFlow: "../Utils/Dismiss-Plan-Error.yaml"

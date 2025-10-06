@@ -1,0 +1,13 @@
+appId: ${appId}
+tags:
+  - smoke
+---
+- launchApp:
+    clearState: true
+- runFlow: '../Utils/Pass-Onboarding.yaml'
+- tapOn: Open Profile
+- assertVisible: View My Plan
+- assertVisible: What's new
+- tapOn: What's new
+- assertVisible: What's New
+- assertVisible: .*View more nutrients & reorder.*
