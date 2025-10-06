@@ -17,4 +17,7 @@ tags:
 - assertVisible: 0g Fibre
 - assertVisible: 0 5/day
 - assertVisible: 0u Alc
-# TODO: Assert meal nutritional values default to 0 when sementic labels are added
+- assertVisible: Breakfast 0g
+- assertVisible: Lunch 0g
+- assertVisible: Dinner 0g
+- assertVisible: Snacks 0g
