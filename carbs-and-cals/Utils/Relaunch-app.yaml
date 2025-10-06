@@ -1,0 +1,9 @@
+appId: ${appId}
+tags:
+  - util
+---
+- stopApp
+- launchApp:
+    clearState: false
+- runFlow: "../Utils/Dismiss-Plan-Error.yaml"
+- assertVisible: Today's totals
