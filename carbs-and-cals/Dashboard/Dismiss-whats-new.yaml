@@ -1,0 +1,12 @@
+appId: ${appId}
+tags:
+  - smoke
+---
+- launchApp:
+    clearState: true
+- runFlow: '../Utils/Pass-Onboarding.yaml'
+- assertVisible: .*Open Whats New screen.*
+- tapOn: Close Whats New Tip
+- assertNotVisible: .*Open Whats New screen.*
+- runFlow: '../Utils/Relaunch-app.yaml'
+- assertNotVisible: .*Open Whats New screen.*
