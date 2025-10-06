@@ -1,0 +1,22 @@
+appId: ${appId}
+tags:
+  - smoke
+---
+- launchApp:
+    clearState: true
+- runFlow: '../Utils/Pass-Onboarding.yaml'
+- assertVisible: .*QUICK TIP 1/4.*
+- tapOn: Next
+- assertVisible: .*QUICK TIP 2/4.*
+- tapOn: Next
+- assertVisible: .*QUICK TIP 3/4.*
+- tapOn: Next
+- assertVisible: .*QUICK TIP 4/4.*
+- tapOn: Done
+- assertVisible: .*Scroll to see more nutrients!.*
+- tapOn: Later
+- assertNotVisible: .*QUICK TIP.*
+- assertNotVisible: .*Scroll to see more nutrients!.*
+- runFlow: '../Utils/Relaunch-app.yaml'
+- assertNotVisible: .*QUICK TIP.*
+- assertNotVisible: .*Scroll to see more nutrients!.*
