@@ -1,0 +1,20 @@
+appId: ${appId}
+tags:
+  - smoke
+---
+- launchApp:
+    clearState: true
+- runFlow: "../Utils/Pass-Onboarding.yaml"
+- assertVisible: 0g Carbs
+- assertVisible: 0 Cals
+- assertVisible: 0g Prot
+- assertVisible: 0g Fat
+- swipe:
+    from:
+      text: 0g Fat
+    direction: LEFT
+- assertVisible: 0g SatFat
+- assertVisible: 0g Fibre
+- assertVisible: 0 5/day
+- assertVisible: 0u Alc
+# TODO: Assert meal nutritional values default to 0 when sementic labels are added
