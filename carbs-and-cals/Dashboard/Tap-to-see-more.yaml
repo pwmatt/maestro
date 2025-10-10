@@ -1,0 +1,13 @@
+appId: ${appId}
+tags:
+  - smoke
+---
+- launchApp:
+    clearState: true
+- runFlow: '../Utils/Pass-Onboarding.yaml'
+- assertVisible: .*Open Whats New screen.*
+- tapOn: .*Open Whats New screen.*
+- assertVisible: What's New
+- scrollUntilVisible:
+    element: .*View more nutrients & reorder.*
+    direction: DOWN
