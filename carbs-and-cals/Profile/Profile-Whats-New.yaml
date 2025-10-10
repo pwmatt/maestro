@@ -10,4 +10,6 @@ tags:
 - assertVisible: What's new
 - tapOn: What's new
 - assertVisible: What's New
-- assertVisible: .*View more nutrients & reorder.*
+- scrollUntilVisible:
+    element: .*View more nutrients & reorder.*
+    direction: DOWN
