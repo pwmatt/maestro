@@ -1,0 +1,11 @@
+appId: ${appId}
+tags:
+  - util
+---
+- tapOn: Search for food, drinks and ingredients
+- waitForAnimationToEnd
+- runFlow:
+    when:
+      visible: Let's explore the new search
+    commands:
+      - tapOn: Let's explore the new search

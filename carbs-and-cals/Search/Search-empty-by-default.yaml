@@ -1,0 +1,9 @@
+appId: ${appId}
+tags:
+  - smoke
+---
+- launchApp:
+    clearState: true
+- runFlow: '../Utils/Pass-Onboarding.yaml'
+- runFlow: '../Utils/Open-search.yaml'
+- assertVisible: Type your search above to see results
