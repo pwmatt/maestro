@@ -24,7 +24,7 @@ tags:
     text: Continue
     enabled: true
 - tapOn: Continue
-- runFlow: "../Utils/Dismiss-Plan-Error.yaml"
+- runFlow: "../Utils/dismiss-plan-error.yaml"
 - assertVisible: Search
 - assertVisible: Today's totals
 - assertVisible: Log a meal

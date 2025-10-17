@@ -11,5 +11,5 @@ tags:
     text: Continue
     enabled: true
 - tapOn: Continue
-- runFlow: "../Utils/Dismiss-Plan-Error.yaml"
+- runFlow: "../Utils/dismiss-plan-error.yaml"
 - assertVisible: Today's totals

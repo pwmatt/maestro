@@ -4,7 +4,7 @@ tags:
 ---
 - launchApp:
     clearState: true
-- runFlow: '../Utils/Pass-Onboarding.yaml'
+- runFlow: '../Utils/pass-onboarding.yaml'
 - assertVisible: .*Open Whats New screen.*
 - tapOn: .*Open Whats New screen.*
 - assertVisible: What's New

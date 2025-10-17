@@ -4,11 +4,11 @@ tags:
 ---
 - launchApp:
     clearState: true
-- runFlow: '../Utils/Pass-Onboarding.yaml'
+- runFlow: '../Utils/pass-onboarding.yaml'
 - assertVisible: .*QUICK TIP 1/4.*
 - tapOn: Skip Tips
 - assertNotVisible: .*QUICK TIP.*
 - assertNotVisible: .*Scroll to see more nutrients!.*
-- runFlow: '../Utils/Relaunch-app.yaml'
+- runFlow: '../Utils/relaunch-app.yaml'
 - assertNotVisible: .*QUICK TIP.*
 - assertNotVisible: .*Scroll to see more nutrients!.*

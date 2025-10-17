@@ -4,6 +4,6 @@ tags:
 ---
 - launchApp:
     clearState: true
-- runFlow: '../Utils/Pass-Onboarding.yaml'
-- runFlow: '../Utils/Open-search.yaml'
+- runFlow: '../Utils/pass-onboarding.yaml'
+- runFlow: '../Utils/open-search.yaml'
 - assertVisible: Type your search above to see results

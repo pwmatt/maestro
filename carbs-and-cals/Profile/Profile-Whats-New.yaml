@@ -4,7 +4,7 @@ tags:
 ---
 - launchApp:
     clearState: true
-- runFlow: '../Utils/Pass-Onboarding.yaml'
+- runFlow: '../Utils/pass-onboarding.yaml'
 - tapOn: Open Profile
 - assertVisible: View My Plan
 - assertVisible: What's new

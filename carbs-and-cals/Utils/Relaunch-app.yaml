@@ -5,5 +5,5 @@ tags:
 - stopApp
 - launchApp:
     clearState: false
-- runFlow: "../Utils/Dismiss-Plan-Error.yaml"
+- runFlow: "../Utils/dismiss-plan-error.yaml"
 - assertVisible: Today's totals
