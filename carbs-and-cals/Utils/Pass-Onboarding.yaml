@@ -13,3 +13,4 @@ tags:
 - tapOn: Continue
 - runFlow: "../Utils/dismiss-plan-error.yaml"
 - assertVisible: Today's totals
+- waitForAnimationToEnd

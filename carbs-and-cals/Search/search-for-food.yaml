@@ -1,0 +1,10 @@
+appId: ${appId}
+tags:
+  - smoke
+---
+- launchApp:
+    clearState: true
+- runFlow: '../Utils/pass-onboarding.yaml'
+- runFlow: '../Utils/open-search.yaml'
+- inputText: Bread
+- assertVisible: Sliced Bread (white)
