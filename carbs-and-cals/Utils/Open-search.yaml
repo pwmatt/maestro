@@ -9,3 +9,6 @@ tags:
       visible: Let's explore the new search
     commands:
       - tapOn: Let's explore the new search
+- assertVisible: Categories
+- assertVisible: Restaurants
+- assertVisible: My Foods
