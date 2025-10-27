@@ -8,3 +8,12 @@ tags:
 - runFlow: '../Utils/open-search.yaml'
 - inputText: Bread
 - assertVisible: Sliced Bread (white)
+- tapOn: Sliced Bread (white)
+- assertVisible: .*11g thin slice.*
+- assertVisible: .*22g thin slice.*
+- assertVisible: .*33g medium slice.*
+- assertVisible: .*44g thick slice.*
+- assertVisible: .*64g extra thick slice.*
+- assertVisible: .*86g.*
+- tapOn: .*33g medium slice.*
+- assertVisible: .*NUTRITION FOR 1 SERVING OF 33g.*
